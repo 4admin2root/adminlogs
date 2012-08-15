@@ -1,9 +1,9 @@
 from django.conf.urls.defaults import patterns, include, url
-from mydjangotest.views import hello,current_datetime,current_datetime_t
-from mydjangotest.rgraph import linechart7 
-from mydjangotest.rgraph_line3 import linechart3 
-from mydjangotest.views import hours_ahead
-from mydjangotest.views import main_frame
+from adminlogs.views import hello,current_datetime,current_datetime_t
+from adminlogs.rgraph import linechart7 
+from adminlogs.rgraph_line3 import linechart3 
+from adminlogs.views import hours_ahead
+from adminlogs.views import main_frame
 import settings
 import os.path
 
@@ -13,8 +13,7 @@ import os.path
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'mydjangotest.views.home', name='home'),
-    # url(r'^mydjangotest/', include('mydjangotest.foo.urls')),
+
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

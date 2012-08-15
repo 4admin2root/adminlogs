@@ -1,4 +1,4 @@
-# Django settings for mydjangotest project.
+# Django settings for adminlogs project.
 import os.path
 
 DEBUG = True
@@ -102,7 +102,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'mydjangotest.urls'
+ROOT_URLCONF = 'adminlogs.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
