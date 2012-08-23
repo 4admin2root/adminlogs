@@ -4,6 +4,7 @@ from adminlogs.rgraph import linechart7
 from adminlogs.rgraph_line3 import linechart3 
 from adminlogs.views import hours_ahead
 from adminlogs.views import main_frame
+from adminlogs.views import matplot
 import settings
 import os.path
 
@@ -13,7 +14,8 @@ import os.path
 
 urlpatterns = patterns('',
     # Examples:
-
+    # url(r'^$', 'adminlogs.views.home', name='home'),
+    # url(r'^adminlogs/', include('mydjangotest.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
@@ -27,5 +29,6 @@ urlpatterns = patterns('',
     (r'^libraries/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATIC_PATH}),
     (r'^time/plus/(\d{1,2})/$', hours_ahead),
     ('^timet/$', current_datetime_t),
+    ('^matplot/$', matplot),
     ('^$',main_frame),
 )
