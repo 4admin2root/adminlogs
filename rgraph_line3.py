@@ -30,10 +30,7 @@ def linechart3(request):
         }
     </script>
 
-    <p>
-        <a href="./">&laquo; Back</a>
-    </p>
-
+    <img src="/img/matplotpic.png" alt="matplotlib">
     </body>
     </html>"""
  return HttpResponse(html)

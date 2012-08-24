@@ -5,6 +5,7 @@ from adminlogs.rgraph_line3 import linechart3
 from adminlogs.views import hours_ahead
 from adminlogs.views import main_frame
 from adminlogs.views import matplot
+from adminlogs.views import matplotpic
 import settings
 import os.path
 
@@ -31,4 +32,5 @@ urlpatterns = patterns('',
     ('^timet/$', current_datetime_t),
     ('^matplot/$', matplot),
     ('^$',main_frame),
+    ('^img/matplotpic.png/$', matplotpic),
 )

@@ -49,3 +49,15 @@ def matplot(request):
  fig.savefig(imgdata, format='png')
  imgdata.seek(0) # rewind the data
  return HttpResponse(imgdata.getvalue(),"image/png")
+def matplotpic(request):
+#mstream=StringIO.StringIO()
+#text = request.REQUEST["pstr"]
+
+ fig = plt.figure()
+ ax = fig.add_subplot(111)
+ ax.plot([1,2,3])
+ 
+ imgdata = StringIO.StringIO()
+ fig.savefig(imgdata, format='png')
+ imgdata.seek(0) # rewind the data
+ return HttpResponse(imgdata.getvalue(),"image/png")
